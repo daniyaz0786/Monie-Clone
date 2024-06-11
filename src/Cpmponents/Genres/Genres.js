@@ -26,7 +26,7 @@ const Genres = ({
     return () => {
       setGenres([]); // Clear genres on component unmount
     };
-  }, [type]);
+  }, [type, setGenres]); // Include all dependencies here
 
   const handleAdd = (genre) => {
     setSelectedGenres([...selectedGenres, genre]);
@@ -70,3 +70,4 @@ const Genres = ({
 };
 
 export default Genres;
+

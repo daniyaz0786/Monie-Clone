@@ -19,7 +19,7 @@ const Trending = () => {
   useEffect(() => {
     window.scroll(0, 0);
     fetchTrending();
-  }, [page]);
+  },[page]);
 
   return (
     <div>

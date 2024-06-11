@@ -33,7 +33,7 @@ const Movies = () => {
   useEffect(() => {
     window.scroll(0, 0);
     fetchMovies();
-  }, [genreforURL, page]);
+  }, [genreforURL, page, setContent, setNumOfPages]);
 
   return (
     <div>
